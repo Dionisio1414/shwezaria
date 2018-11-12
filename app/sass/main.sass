@@ -1,0 +1,142 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+	
+::placeholder
+	color: rgba(69, 57, 57, 0.5)
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a
+	outline: none
+html
+	overflow-x: hidden
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $dark-text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+	&:active
+		text-decoration: none		
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.clearfix::after
+	content: ""
+	clear: both
+	display: table
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right	
+
+.text-left
+	text-align: left
+
+b, strong
+	font-weight: bold
+
+
+// HEADER
+
+.header
+	padding: 0 20px 0 20px
+	&__left
+		display: flex
+		padding-left: 19px
+		height: 100%
+		.hamburger-menu
+			position: relative
+			background-color: transparent
+			border: none
+			width: 25px
+			height: 50px
+			cursor: pointer
+			margin-right: 41px
+			margin-top: 35px
+			span
+				position: absolute
+				display: block
+				background-color: $dark-text
+				border-radius: 2px
+				opacity: 1
+				height: 3px
+				width: 100%
+				transform: rotate(0deg)
+				transition: all .3s ease
+				&:nth-child(1)
+					top: 0
+				&:nth-child(2),
+				&:nth-child(3)
+					top: 7px
+				&:nth-child(4)
+					top: 14px
+		.social-list
+			list-style-type: none
+			padding: 0
+			margin: 0
+			margin-top: 28px
+			li
+				display: inline-block
+				margin-right: 42px
+				img
+					display: inline-block
+					vertical-align: middle
+					width: 18px
+					margin-right: 10px
+				&:nth-child(2)
+					img
+						width: 25px
+				&:nth-child(3)
+					margin-right: 0
+					img
+						width: 23px
+				p
+					font-family: "RobotoMedium", sans-serif
+					font-size: 14px
+					display: inline-block
+					line-height: 18px
+					margin: 0
+					vertical-align: middle
+	.logo
+		display: block
+		margin-top: 31px
+		img
+			margin: 0 auto
+			
+				
+
+// END HEADER
+
+
+// FIRST SECTION
+
+
+// END SECTION
