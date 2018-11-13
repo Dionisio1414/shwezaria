@@ -342,6 +342,7 @@ b, strong
 // Section news
 
 .news
+	margin-bottom: 134px
 	&__caption
 		font-family: $caption
 		font-size: 48px
@@ -380,4 +381,136 @@ b, strong
 		font-size: 24px
 		margin-left: 30px
 		color: $dark-text
+
 // End section news
+
+
+// Section price & services
+
+/* GENERAL STYLES FOR TABLE */
+.table-prices
+	display: table
+	width: 95%
+	.tr
+		font-size: 16px
+		text-transform: uppercase
+		border-bottom: 2px solid $accent
+		padding: 7px 0 0 23px
+		letter-spacing: 1px
+		color: $dark-text
+		margin: 0
+		margin-bottom: 8px
+	.table-row
+		display: table-row
+		.cell
+			display: table-cell
+			.descr
+				float: left
+				p
+					font-size: 18px
+					padding-left: 21px
+					line-height: 21px
+					margin-bottom: 2px
+					letter-spacing: 1.2px
+					color: #7b7b7b
+			.prices
+				float: right
+				font-family: "RobotoBold", sans-serif
+				font-size: 18px
+				padding-right: 35px
+				color: $accent
+				p
+					text-transform: uppercase
+					padding: 0
+					margin-bottom: 0
+					line-height: 24px
+					&:nth-child(2)
+						margin-bottom: 13px
+	.table-row.main
+		background-color: $accent
+		text-transform: uppercase
+		font-size: 24px
+		color: #fff
+		.cell
+			font-family: "RobotoMedium", sans-serif
+			padding: 9px 0 9px 21px
+			letter-spacing: 5px
+			span:last-child
+				float: right
+				padding-right: 17px
+	
+/* END GENERAL STYLES FOR TABLE */	
+
+.service
+	&__caption
+		font-family: $caption
+		font-size: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 91px
+		color: $accent
+	&__content
+		background-color: #F9F9F9
+		padding: 90px 104px
+		h2
+			font-family: "RobotoMedium", sans-serif
+			font-size: 36px
+			letter-spacing: 1px
+			margin-bottom: 20px
+			color: $dark-text
+		.table-row:nth-child(2)
+			.cell
+				width: 100%
+				p
+					margin-bottom: 8px
+		.table-row:nth-child(4)
+			.cell
+				p
+					margin-top: 24px
+					margin-bottom: 14px
+		.table-row:nth-child(5)
+			.prices
+				p
+					margin-bottom: 0
+		.table-row:nth-child(6)
+			.cell
+				p
+					margin-top: 20px
+					margin-bottom: 16px
+		.block-image
+			position: absolute
+			bottom: 18px
+			left: 49px
+			img
+				display: inline-block
+				max-width: 100%
+				height: auto
+				&:first-child
+					margin-right: 38px
+	
+// End section price & services
+
+// Section hire
+
+.hire
+	&__content
+		padding: 108px 104px
+		h2
+			font-family: "RobotoMedium", sans-serif
+			font-size: 36px
+			letter-spacing: 1px
+			margin-bottom: 20px
+			color: $dark-text
+		.table-row 
+			.cell 
+				.prices 
+					p 
+						&:nth-child(2)
+							margin-bottom: 0
+		.table-row:nth-child(4)
+			.tr
+				margin-top: 24px
+
+// End section hire
+
+@import 'media'
