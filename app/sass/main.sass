@@ -67,7 +67,9 @@ b, strong
 // HEADER
 
 .header
-	padding: 0 20px 0 20px
+	padding: 0 0px 0 20px
+	.container-fluid
+		padding-right: 0
 	&__left
 		display: flex
 		padding-left: 19px
@@ -128,15 +130,254 @@ b, strong
 	.logo
 		display: block
 		margin-top: 31px
+		padding-right: 33px
 		img
 			margin: 0 auto
-			
-				
+	&__right
+		background-color: $accent
+		padding-top: 27px
+		padding-bottom: 123px
+		padding-left: 84px
+		.social-list
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				display: inline-block
+				margin-right: 54px
+				img
+					display: inline-block
+					vertical-align: middle
+					margin-right: 10px
+					width: 30px
+				p
+					display: inline-block
+					font-family: "RobotoBold", sans-serif
+					font-size: 14px
+					margin: 0
+					vertical-align: middle
+					color: #fff
+				&:nth-child(3)
+					p
+						line-height: 18px
+				&:last-child
+					margin-right: 0
 
 // END HEADER
 
 
 // FIRST SECTION
 
+.main
+	position: relative
+	margin-bottom: 130px
+	.container-fluid
+		padding-right: 0
+	&__caption
+		position: absolute
+		top: 23%
+		left: 15.5%
+		font-family: $caption
+		font-size: 86px
+		text-align: center
+		text-transform: uppercase
+		line-height: 65px
+		color: $accent
+		z-index: 1
+		span
+			display: inline-block
+			margin-left: 92px
+			margin-bottom: 15px
+			font-size: 106px	
+			color: #006C98
+			&:last-child
+				font-size: 86px
+				margin-left: 70px
+				margin-bottom: 0
+				color: $accent
+	.container-button
+		position: absolute
+		left: 125px
+		bottom: 0
+	&__button
+		display: inline-block
+		position: relative
+		font-family: $default-font
+		font-size: 16px
+		text-transform: uppercase
+		background-color: $accent
+		padding: 41px 62px
+		letter-spacing: 1.5px
+		color: #fff
+		&::after
+			content: ""
+			position: absolute
+			left: 100%
+			background-image: url(../img/camera-diaphragm.png)
+			background-repeat: no-repeat
+			background-position: 0 2px
+			background-size: 28px
+			width: 50px
+			height: 50px
+			margin-left: 39px
+	&__socials
+		position: absolute
+		top: 150px
+		left: 50px
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 55px
+		height: 100%
+		.social-item
+			margin-bottom: 37px
+			&:last-child
+				margin-bottom: 0
+			a
+				color: #000
+				i
+					font-size: 24px
+		.button-down
+			position: absolute
+			bottom: 235px
+			right: 11px
+			font-size: 18px
+			text-transform: uppercase
+			transform: rotate(-90deg)
+			letter-spacing: 1px
+			color: $dark-text
+			&:before
+				content: ''
+				position: absolute
+				left: -74px
+				top: 13px
+				width: 60px
+				height: 2px
+				background-color: $dark-text
+				
+
 
 // END SECTION
+
+// Second section
+
+.about
+	position: relative
+	min-height: 700px
+	margin-bottom: 72px
+	&__circle-information
+		position: absolute
+		top: 9%
+		left: 27%
+		.description
+			position: relative
+			background-color: $accent
+			padding-top: 14px
+			padding-bottom: 15px
+			padding-left: 25px
+			width: 239px
+			height: 90px
+			a
+				position: absolute
+				font-family: "RobotoBold", sans-serif
+				font-size: 30px
+				line-height: 25px
+				text-transform: uppercase
+				letter-spacing: 3px
+				color: #fff
+			.circle
+				position: absolute
+				background-color: #fff
+				width: 70px
+				height: 70px
+				right: 253px
+				bottom: 16px
+				border-radius: 50%
+				&__border
+					position: absolute
+					bottom: -8px
+					right: -8px
+					width: 86px
+					height: 86px
+					background-color: transparent
+					border: 1px solid #fff
+					border-radius: 50%
+					&:nth-child(2)
+						width: 100px
+						height: 100px
+						bottom: -15px
+						right: -15px
+					&:nth-child(3)
+						width: 115px
+						height: 115px
+						bottom: -23px
+						right: -23px
+	
+	&__circle-information:nth-child(2)
+		top: 28%
+		left: 13%
+		.description
+			padding-left: 11px
+	&__circle-information:nth-child(3)
+		top: 53%
+		left: 19%	
+	&__circle-information:nth-child(4)
+		top: 37%
+		left: 38%
+	&__circle-information:nth-child(5)
+		top: 18%
+		left: 52%
+	&__circle-information:nth-child(6)
+		top: 46%
+		left: 59%
+	&__circle-information:nth-child(7)
+		top: 27%
+		left: 78%
+	&__circle-information:nth-child(8)
+		top: 68%
+		left: 74%
+
+// End second section
+
+// Section news
+
+.news
+	&__caption
+		font-family: $caption
+		font-size: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 56px
+		color: $accent
+	.owl-carousel
+		.owl-nav.disabled
+			display: block
+		.owl-nav
+			text-align: center
+			margin-top: 71px
+			button.owl-next,
+			button.owl-prev
+				background-color: #006C98
+				border-radius: 50%
+				padding: 18px 23px!important
+				border: none
+				outline: none 
+				i
+					color: #fff
+			button.owl-prev
+				margin-right: 17px
+			button.owl-next
+				margin-left: 30px
+			
+		div
+			display: flex
+			justify-content: center
+			img
+				width: 201px
+				height: 140px
+	&__description-slider
+		font-family: "RobotoBold", sans-serif
+		font-size: 24px
+		margin-left: 30px
+		color: $dark-text
+// End section news
