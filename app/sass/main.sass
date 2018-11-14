@@ -555,10 +555,6 @@ b, strong
 			color: $dark-text
 		.table-prices
 			.table-row
-				.cell
-					.descr
-						p
-							padding: 0
 					.tr
 						display: -webkit-flex
 						display: -moz-flex
@@ -566,7 +562,6 @@ b, strong
 						display: -o-flex
 						display: flex
 						justify-content: space-between
-						padding-left: 0
 						span
 							font-family: "RobotoBold", sans-serif
 							font-size: 18px
@@ -650,11 +645,12 @@ b, strong
 		h3
 			font-family: "RobotoBold", sans-serif
 			font-size: 24px
-			letter-spacing: 5.5px
+			letter-spacing: 5px
 			text-transform: uppercase
 			margin-bottom: 20px
 			color: $dark-text
 		.owl-carousel 
+			margin-bottom: 33px
 			div
 				.description_slide
 					display: -webkit-flex
@@ -693,12 +689,211 @@ b, strong
 				margin-right: 17px
 			button.owl-next
 				margin-left: 30px
+		.block-image
+			margin-top: 33px
+			margin-left: 29px
+		.table-prices
+			.table-row
+				.prices
+					p:nth-child(2)
+						margin: 0
+				&:nth-child(4)
+					.tr
+						margin-top: 28px
+				&:nth-child(6)
+					.tr
+						margin-top: 25px
+				
 
 
 // End section school
 	
 	
-					
+// Section request
 
+.request
+	&__content
+		background-color: $accent
+		padding: 98px 104px
+		margin-bottom: 118px
+		h1
+			font-family: "RobotoBlack", sans-serif
+			font-size: 48px
+			text-transform: uppercase
+			color: #fff
+		.us
+			font-family: "RobotoBlack", sans-serif
+			font-size: 24px
+			text-transform: uppercase
+			color: #fff
+		.call
+			display: inline-block
+			font-family: "RobotoMedium", sans-serif
+			text-transform: uppercase
+			background-color: #00B7E6
+			padding: 12px 80px
+			border-radius: 30px
+			color: #fff
+		.block-image
+			position: absolute
+			right: 0
+
+// End section request
+
+
+// Section us instafgram
+
+.us-instagram
+	&__caption
+		font-family: $caption
+		font-size: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 0
+		color: $accent
+	&__link
+		font-family: $caption
+		font-size: 24px
+		text-align: center
+		margin-bottom: 45px
+		color: $accent
+	&__gallery
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 106px
+		img
+			margin-right: 30px
+			margin-bottom: 30px
+
+// End section us instafgram
+
+// Section partners
+
+.partners
+	h1
+		font-family: $caption
+		font-size: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 54px
+		color: $accent
+	&__brands
+		padding: 105px 0
+		background: $accent url(../img/bg-partners.jpg) no-repeat
+		background-size: cover
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 107px
+		img
+			height: 100px
+			&:nth-child(2)
+				height: 60px
+
+// End section partners
+
+
+// Section contacts
+
+.contacts
+	background: #fff url(../img/contacts-background.jpg) no-repeat
+	background-size: cover
+	h1
+		font-family: $caption
+		font-size: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 54px
+		color: $accent
+	&__content
+		iframe
+			width: 100%
+	&__description
+		background-color: #fff
+		padding: 86px 29px
+		width: 57%
+		margin-left: 105px
+		h3
+			font-family: "RobotoBold", sans-serif
+			font-size: 24px
+			letter-spacing: 5px
+			text-transform: uppercase
+			margin-bottom: 20px
+			color: $dark-text
+		p
+			font-family: "MontserratMedium", sans-serif
+			font-size: 18px
+			line-height: 25px
+			margin-bottom: 20px
+			color: #454545
+
+// End section contacts
+
+
+// Footer
+
+.footer
+	background-color: $accent
+	padding: 60px 104px
+	&__left
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				display: inline-block
+				margin-right: 42px
+				img
+					display: inline-block
+					vertical-align: middle
+					margin-right: 10px
+				p
+					font-family: "RobotoMedium", sans-serif
+					font-size: 14px
+					display: inline-block
+					line-height: 18px
+					margin: 0
+					vertical-align: middle
+					color: #fff
+		.socials-footer
+			margin-top: 35px
+			li
+				a
+					i
+						font-size: 24px
+						color: #fff
 	
+	&__right
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-end
+		span
+			display: inline-block
+			font-family: "RobotoMedium", sans-serif
+			font-size: 14px
+			line-height: 18px
+			color: #fff
+		img
+			display: inline-block
+			max-width: 100%
+			height: auto
+			margin-left: 35px
+					
+		
+				
+
+// End footer
+
 @import 'media'
