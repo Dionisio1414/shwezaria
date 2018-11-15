@@ -367,7 +367,6 @@ b, strong
 						height: 115px
 						bottom: -23px
 						right: -23px
-	
 	&__circle-information:nth-child(2)
 		top: 28%
 		left: 13%
@@ -848,9 +847,10 @@ b, strong
 		display: flex
 		justify-content: space-around
 		align-items: center
+		flex-wrap: wrap
 		margin-bottom: 107px
 		img
-			height: 100px
+			height: auto
 			&:nth-child(2)
 				height: 60px
 
@@ -861,7 +861,7 @@ b, strong
 
 .contacts
 	background: #fff url(../img/contacts-background.jpg) no-repeat
-	background-size: cover
+	background-size: contain
 	h1
 		font-family: $caption
 		font-size: 48px
@@ -872,6 +872,7 @@ b, strong
 	&__content
 		iframe
 			width: 100%
+			height: 100%
 	&__description
 		background-color: #fff
 		padding: 86px 29px
@@ -928,12 +929,9 @@ b, strong
 						color: #fff
 	
 	&__right
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
-		justify-content: flex-end
+		justify-content: center
+		align-items: center
 		span
 			display: inline-block
 			font-family: "RobotoMedium", sans-serif
