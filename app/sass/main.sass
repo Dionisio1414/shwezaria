@@ -83,6 +83,7 @@ b, strong
 			cursor: pointer
 			margin-right: 41px
 			margin-top: 35px
+			outline: none
 			span
 				position: absolute
 				display: block
@@ -100,6 +101,22 @@ b, strong
 					top: 7px
 				&:nth-child(4)
 					top: 14px
+		.hamburger-menu.hamburger-open
+			span
+				&:nth-child(1)
+					top: 18px
+					width: 0%
+					left: 50%
+				&:nth-child(2)
+					transform: rotate(45deg)
+					z-index: 2
+				&:nth-child(3)
+					transform: rotate(-45deg)
+					z-index: 2
+				&:nth-child(4)
+					top: 18px
+					width: 0%
+					left: 50%
 		.social-list
 			list-style-type: none
 			padding: 0
@@ -162,7 +179,7 @@ b, strong
 						line-height: 18px
 				&:last-child
 					margin-right: 0
-
+	
 // END HEADER
 
 
@@ -246,6 +263,7 @@ b, strong
 			transform: rotate(-90deg)
 			letter-spacing: 1px
 			color: $dark-text
+			z-index: 2
 			&:before
 				content: ''
 				position: absolute
@@ -254,8 +272,45 @@ b, strong
 				width: 60px
 				height: 2px
 				background-color: $dark-text
-				
+	// popup menu
 
+	&__popup-menu
+		position: absolute
+		top: 0
+		left: 0
+		background-color: #fff
+		padding: 65px 68px
+		padding-right: 0
+		width: 28%
+		height: 100%
+		z-index: 2
+		opacity: 0
+		display: none
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				margin-bottom: 24px
+				a
+					font-family: "MontserratSemiBold", sans-serif
+					font-size: 14px
+					text-transform: uppercase
+					color: $accent
+			li.active
+				a
+					border-bottom: 4px solid $accent
+		.social
+			margin-top: 70px
+			li
+				display: inline-block
+				margin-bottom: 0
+				margin-right: 34px
+				a
+					font-size: 28px
+				
+	
+	// end popup menu
 
 // END SECTION
 
