@@ -1409,6 +1409,10 @@
 			
 	// section end contacts
 
+
+	.main__popup-menu .header__right .social-list li p
+		font-size: 12px
+	
 +media-breakpoint-down(xs)
 	// header
 	.header 
@@ -1433,6 +1437,9 @@
 				font-size: 9vw
 		.mobile-button
 			top: 70%
+		.header__right
+			height: 100%
+	
 	.main.toggle-height
 		height: 100vh
 	
@@ -1724,6 +1731,9 @@
 
 	// end general table's
 
+	.footer__left .socials-footer
+		margin-top: 20px
+	
 @media screen and (max-width: 425px)
 	
 	// popup menu
@@ -1777,3 +1787,24 @@
 			&:after
 				left: -30px
 			width: 20px
+
+	.footer 
+		&__left 
+			ul
+				display: flex
+				justify-content: center
+				text-align: center
+				li
+					margin-right: 0
+			.socials-footer
+				text-align: center
+				margin-top: 15px
+		&__right
+			margin-top: 10px!important
+
+@media screen and (max-width: 320px)
+	.main .header__right
+		height: auto
+				
+	
+	

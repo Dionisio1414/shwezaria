@@ -37,13 +37,21 @@ $(function() {
 			});
 		}
 		
-		if($(window).width() < 576) {
+		if($(window).width() < 576 ) {
 			if(!$mainSection.hasClass('toggle-height')) {
 				$mainSection.addClass('toggle-height');
+				$mainMenu.addClass('hidden-content');
+				$html.addClass('hidden-content');
 			} else {
 				$mainSection.removeClass('toggle-height');
+				$mainMenu.removeClass('hidden-content');
+				$html.removeClass('hidden-content');
 			}
 		};
+		
+		if($(window).width() < 375) {
+			if($mainMenu.hasClass('hidden-content')) $mainMenu.removeClass('hidden-content')
+		}
 	
 	});
 	
