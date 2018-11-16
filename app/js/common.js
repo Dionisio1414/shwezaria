@@ -21,6 +21,8 @@ $(function() {
 	
 	var $hamburger = $('.header .header__left .hamburger-menu'),
 		$mainMenu = $('.main .main__popup-menu');
+	var $mainSection = $('.main'),
+		$html = $('html');
 	$hamburger.click(function() {
 		$(this).toggleClass('hamburger-open');
 		if($(this).hasClass('hamburger-open')) {
@@ -34,21 +36,23 @@ $(function() {
 				$(this).hide();
 			});
 		}
+		
+		if($(window).width() < 576) {
+			if(!$mainSection.hasClass('toggle-height')) {
+				$mainSection.addClass('toggle-height');
+			} else {
+				$mainSection.removeClass('toggle-height');
+			}
+		};
+	
 	});
 	
-	
+
 	$('.main__socials .button-down').click(function() {
 		$('html, body').animate({scrollTop:$('#next-screen').position().top - 60}, 1000);
 	});
 	
+
 	
-	$(document).bind('mousewheel', function (e) { 
-		var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*10000); 
-		e.preventDefault(); 
-		e.stopPropagation(); 
-		$(document.body).stop().animate({ 
-			 scrollTop : nt 
-		 } , 500);  
-	});
 	
 });

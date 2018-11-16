@@ -187,6 +187,7 @@ b, strong
 
 // FIRST SECTION
 
+	
 .main
 	position: relative
 	margin-bottom: 130px
@@ -348,6 +349,7 @@ b, strong
 	
 	// end popup menu
 
+	
 // END SECTION
 
 // Second section
@@ -384,6 +386,9 @@ b, strong
 				right: 253px
 				bottom: 16px
 				border-radius: 50%
+				transition: all .6s ease
+				&:hover
+					background-color: #00AFD7
 				&__border
 					position: absolute
 					bottom: -8px
@@ -393,16 +398,24 @@ b, strong
 					background-color: transparent
 					border: 1px solid #fff
 					border-radius: 50%
+					transition: all .5s ease
+					transition-delay: .2s
 					&:nth-child(2)
 						width: 100px
 						height: 100px
 						bottom: -15px
 						right: -15px
+						transition-delay: .4s
 					&:nth-child(3)
 						width: 115px
 						height: 115px
 						bottom: -23px
 						right: -23px
+						transition-delay: .6s
+				&:hover .circle__border
+					border-color: #00AFD7
+					
+		
 	&__circle-information:nth-child(2)
 		top: 28%
 		left: 13%

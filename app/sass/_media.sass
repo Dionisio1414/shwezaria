@@ -159,17 +159,17 @@
 			top: 23%
 			left: 15.5%
 			font-family: $caption
-			font-size: 4.479vw
+			font-size: 3.679vw
 			text-align: center
 			text-transform: uppercase
-			line-height: 3.385vw
+			line-height: 3.585vw
 			color: $accent
 			z-index: 1
 			span
 				display: inline-block
-				margin-left: 4.792vw
+				margin-left: 1.792vw
 				margin-bottom: 0.781vw
-				font-size: 5.521vw	
+				font-size: 4.521vw
 				color: #006C98
 				&:last-child
 					font-size: 4.479vw
@@ -1144,6 +1144,7 @@
 	.main
 		&__popup-menu
 			width: 45%
+			overflow: auto
 			ul 
 				li 
 					a
@@ -1152,7 +1153,14 @@
 				li 
 					a
 						font-size: 18px
-
+		.header__right
+			display: block
+			height: auto
+			.social-list:last-child
+				li
+					img
+						width: 15px
+	
 	// end popup menu
 
 	.table-prices
@@ -1215,16 +1223,13 @@
 			top: 30%
 			left: 18%
 			transform: translateX(-18%)
-			font-size: 65px
-			line-height: 45px
+			font-size: 6vw
+			line-height: 50px
 			width: 100%
 			span
 				margin-left: 31px
 				margin-bottom: 9px
-				font-size: 60px
-				&:last-child
-					font-size: 60px
-					margin-left: 31px	
+				font-size: 7vw	
 		.container-button
 			display: none
 		.mobile-button-down
@@ -1367,16 +1372,15 @@
 		margin-top: 10px
 		height: auto
 		&__caption
-			font-size: 45px
-			line-height: 30px
+			font-size: 7vw
+			line-height: 8vw
 			span
 				margin-left: 7px
-				font-size: 45px
-				&:last-child
-					font-size: 45px
-					margin-left: 15px
+				font-size: 9vw
 		.mobile-button
 			top: 70%
+	.main.toggle-height
+		height: 100vh
 	
 	// end section main
 
@@ -1568,6 +1572,7 @@
 				font-size: 10px
 				margin-bottom: 30px
 				line-height: 15px
+	
 	// end contacts section
 
 
@@ -1610,10 +1615,44 @@
 					margin-right: 20px
 					&:first-child
 						margin-left: 30px
-
+		.header__right
+			padding: 20px 0
+			.social-list
+				margin-bottom: 15px
+				li
+					display: inline-block
+					margin-right: 15px
+					p
+						font-size: 10px
+				&:last-child
+					margin-bottom: 0
 	// end popup menu
 
+
 @media screen and (max-width: 425px)
+	
+	// popup menu
+
+	.main
+		.header__right
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			flex-wrap: wrap
+			padding-right: 10px
+			padding-left: 10px
+			.social-list
+				display: block
+				text-align: left
+				li
+					display: block
+					margin-right: 0
+					p
+						font-size: 12px
+	
+	// end popup menu
+	
+	
 	// footer
 	.footer
 		.footer__left 
