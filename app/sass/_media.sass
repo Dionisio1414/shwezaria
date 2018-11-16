@@ -753,7 +753,32 @@
 	.header__left 
 		.hamburger-menu
 			margin-top: 2.3vw
+		.social-list 
+			li 
+				margin-right: 0.688vw
+				p
+					font-size: 0.929vw
+					line-height: 1.238vw
+	.header__right
+		padding-left: 1.375vw
+		.social-list 
+			li 
+				margin-right: 2.513vw
+				p
+					font-size: .929vw
+		
 	//end header
+
+	// main
+
+	.main
+		&__socials 
+			.social-item 
+				a 
+					i
+						font-size: 1.85vw
+
+	// end main
 	
 	// section colb
 
@@ -764,6 +789,20 @@
 						width: 21vw
 
 	// end section colb
+
+	// owl carousel
+
+	.owl-carousel 
+		.owl-nav 
+			button.owl-next, 
+			button.owl-prev
+				padding: 9px 15px !important
+				i
+					font-size: inherit
+	// end owl carousel
+
+	.news .owl-carousel .owl-nav button.owl-next, .news .owl-carousel .owl-nav button.owl-prev
+		padding: 9px 15px !important
 
 +media-breakpoint-down(md)
 	//header
@@ -777,9 +816,9 @@
 				margin-top: 2.7vw
 			.social-list 
 				li
-					margin-right: 1.188vw
+					margin-right: 0.688vw
 					p
-						font-size: .759vw
+						font-size: .859vw
 		.header__right
 			padding-left: 2.875vw
 	//end header
@@ -1355,6 +1394,21 @@
 
 	// end section school
 
+
+	// section contacts
+
+	.contacts
+		&__content
+			background-position-x: 76%	
+		&__description 
+			h3
+				font-size: 1.95vw
+			p
+				font-size: 1.65vw
+				line-height: 2.502vw
+			
+	// section end contacts
+
 +media-breakpoint-down(xs)
 	// header
 	.header 
@@ -1388,6 +1442,7 @@
 	// section about
 
 	.about
+		min-height: 55.458vw
 		&__circle-information 
 			.description 
 				a
@@ -1411,7 +1466,31 @@
 						right: -0.4281vw
 					&:nth-child(3)
 						display: none
-	
+		&__circle-information:nth-child(1)
+			top: 20%
+			left: 27%
+		&__circle-information:nth-child(2)
+			top: 36%
+			left: 13%
+		&__circle-information:nth-child(3)
+			top: 60%
+			left: 19%
+		&__circle-information:nth-child(4)
+			top: 44%
+			left: 40%
+		&__circle-information:nth-child(5)
+			top: 18%
+			left: 56%
+		&__circle-information:nth-child(6)
+			top: 46%
+			left: 64%
+		&__circle-information:nth-child(7)
+			top: 27%
+			left: 83%
+		&__circle-information:nth-child(8)
+			top: 68%
+			left: 80%
+
 	// end section about
 
 
@@ -1489,6 +1568,7 @@
 	// school section
 
 	.school
+		margin-bottom: 50px
 		&__content 
 			h2
 				font-size: 24px
@@ -1497,7 +1577,10 @@
 					line-height: 24px
 			h3
 				font-size: 16px
+				margin-top: 30px
 			.owl-carousel 
+				.owl-nav
+					margin: 0
 				div 
 					.description_slide
 						display: block
@@ -1539,6 +1622,8 @@
 
 	
 	.partners 
+		&__brands
+			margin-bottom: 50px
 		h1
 			font-size: 24px
 			margin-bottom: 24px
@@ -1628,6 +1713,16 @@
 					margin-bottom: 0
 	// end popup menu
 
+
+	// general table's
+
+	.table-prices 
+		.table-row 
+			.cell 	
+				.descr
+					width: 80%
+
+	// end general table's
 
 @media screen and (max-width: 425px)
 	
