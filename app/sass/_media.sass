@@ -1086,11 +1086,33 @@
 			font-size: 36px
 		&__description 
 			h3
-				font-size: 16px
+				font-size: 1.55vw
 			p
-				font-size: 12px
+				font-size: 1.25vw
 	
 	// end contacts section
+
+
+
+	// footer
+
+	.footer__left 
+		ul 
+			li 
+				p
+					font-size: 0.929vw
+					line-height: 1.4vw
+		.socials-footer 
+			li 
+				a 
+					i
+						font-size: 1.85vw
+	.footer__right 
+		span
+			font-size: 1.29vw
+			line-height: 1.4vw
+
+	// end footer
 	
 +media-breakpoint-down(sm)
 	//header
@@ -1117,30 +1139,91 @@
 			display: none
 	// end header
 	
+	// popup menu
+
+	.main
+		&__popup-menu
+			width: 45%
+			ul 
+				li 
+					a
+						font-size: 12px
+			.social 
+				li 
+					a
+						font-size: 18px
+
+	// end popup menu
+
+	.table-prices
+		.tr
+			font-size: 3.417vw
+			text-transform: uppercase
+			border-bottom: 2px solid $accent
+			padding: 0.365vw 0 0 1.198vw
+			letter-spacing: 0.052vw
+			margin-bottom: 0.417vw
+			span
+				font-size: 0.938vw
+		.table-row
+			display: table-row
+			.cell
+				display: table-cell
+				.descr
+					float: left
+					p
+						font-size: 2.738vw
+						padding-left: 1.094vw
+						line-height: 4.094vw
+						margin-bottom: 0.104vw
+				.prices
+					float: right
+					font-family: "RobotoBold", sans-serif
+					font-size: 2.538vw
+					padding-right: 1.823vw
+					p
+						text-transform: uppercase
+						padding: 0
+						margin-bottom: 0
+						line-height: 5.25vw
+						&:nth-child(2)
+							margin-bottom: 0.677vw
+		.table-row.main
+			background-color: $accent
+			text-transform: uppercase
+			font-size: 3.25vw
+			color: #fff
+			.cell
+				font-family: "RobotoMedium", sans-serif
+				padding: 0.469vw 0 0.469vw 1.094vw
+				letter-spacing: 0.26vw
+				span:last-child
+					padding-right: 0.885vw
+
 
 	// main section
 
 	.main
 		height: auto
 		overflow: hidden
-		margin-top: 35px
+		margin-top: 15px
 		.container-fluid
 			padding: 0
 		&__socials
 			display: none
 		&__caption
-			top: 15%
+			top: 30%
 			left: 18%
 			transform: translateX(-18%)
-			font-size: 45px
-			line-height: 28px
+			font-size: 65px
+			line-height: 45px
 			width: 100%
 			span
 				margin-left: 31px
 				margin-bottom: 9px
-				font-size: 42px
+				font-size: 60px
 				&:last-child
-					font-size: 42px
+					font-size: 60px
 					margin-left: 31px	
 		.container-button
 			display: none
@@ -1148,13 +1231,13 @@
 			display: block
 		.mobile-button
 			display: block
-			top: 50%
+			top: 70%
 			left: 2%
 			z-index: 2
 			width: 100%
 			text-align: center
 			a
-				font-size: 10px
+				font-size: 12px
 				&:after
 					background-size: 2.458vw
 		.main-bg
@@ -1166,6 +1249,17 @@
 	// end main section	
 
 
+	// sectino about
+
+	.about
+		&__circle-information 
+			.description 
+				a
+					line-height: 1.702vw
+
+	// end about
+
+
 	// section colb
 	.colb__content 
 		.caption-row
@@ -1175,6 +1269,86 @@
 			font-size: 16px
 	//end section colb
 
+
+	// news
+
+	.news 
+		.owl-carousel 
+			div
+				display: block
+				img
+					display: block
+					width: auto
+					height: auto
+					margin: 0 auto
+			.owl-nav
+				text-align: center
+				margin-top: 10px
+		&__description-slider
+			font-size: 14px
+			text-align: center
+			margin-top: 2rem
+
+	// end news
+
+
+	// section services
+
+	.service
+		&__caption
+			font-size: 24px
+		&__content 
+			h2
+				font-size: 24px
+
+	// end section services
+
+
+	// footer
+	.footer
+		padding: 3.125vw 0
+		.container-fluid
+			width: 100%
+		.footer__left 
+			ul
+				text-align: center
+				li 
+					p
+						font-size: 10px
+						line-height: 16px
+						text-align: left
+			.socials-footer
+				text-align: center
+				li 
+					a 
+						i
+							font-size: 18px
+		.footer__right
+			margin-top: 25px
+			span
+				font-size: 10px
+				line-height: 15px
+
+	// end footer
+
+	// section school
+
+	.school
+		&__content 
+			.school-slider
+				div 
+					display: block
+					img
+						max-width: 100%
+						height: auto
+						margin: 0 auto
+					.description_slide 
+						h4
+							text-align: center
+						p
+							text-align: center
+
+	// end section school
 
 +media-breakpoint-down(xs)
 	// header
@@ -1193,15 +1367,16 @@
 		margin-top: 10px
 		height: auto
 		&__caption
-			font-size: 35px
+			font-size: 45px
+			line-height: 30px
 			span
 				margin-left: 7px
-				font-size: 34px
+				font-size: 45px
 				&:last-child
-					font-size: 35px
+					font-size: 45px
 					margin-left: 15px
 		.mobile-button
-			top: 50%
+			top: 70%
 	
 	// end section main
 
@@ -1236,20 +1411,232 @@
 	// end section about
 
 
-	// Section us instafgram
+	// Section us instagram
 
 	.us-instagram
 		&__gallery
 			img
 				margin-right: 0
 
-	// End section us instafgram
+	// End section us instagram
 
+	
+	// section news
+
+	.news
+		&__caption
+			font-size: 24px
+		.owl-carousel 
+			.owl-nav 
+				button.owl-prev,
+				button.owl-next
+					padding: 9px 15px !important
+				button.owl-prev
+					margin-right: 0
+
+	// end section news
+
+	// hire
+
+	.hire 
+		h2
+			font-size: 24px
+		.table-row:last-child 
+			.cell 
+				.descr 
+					p
+						padding-right: 10.552vw
+	
+	// end hire
+
+	// tubing
+
+	.tubing
+		&__content
+			h2
+				font-size: 24px
+			.table-prices 
+				.table-row 
+					.tr 
+						span
+							font-size: 2.538vw
+							padding-right: 19px
+		
+	// end tubing
+
+
+	.table-prices .table-row.main .cell span:last-child
+		padding-right: 19px
+
+	// colb section
+
+	.colb
+		&__content 
+			h2
+				font-size: 24px
+		.caption-row
+			font-size: 12px
+		p
+			font-size: 12px
+
+	// end colb section
+
+
+	// school section
+
+	.school
+		&__content 
+			h2
+				font-size: 24px
+				+ p
+					font-size: 14px
+					line-height: 24px
+			h3
+				font-size: 16px
+			.owl-carousel 
+				div 
+					.description_slide
+						display: block
+					img
+						display: block
+						width: auto
+						height: auto
+						float: none
+						margin-bottom: 20px
+					.description_slide
+						h4
+							font-size: 16px
+						p
+							font-size: 14px
+				button.owl-next, 
+				button.owl-prev
+					padding: 9px 15px !important
+				button.owl-prev
+					margin-right: auto
+	
+	
+	// end school section
+
+
+	// section instagram
+
+	.us-instagram
+		&__caption
+			font-size: 24px
+		&__link
+			font-size: 16px
+		&__gallery
+			margin-bottom: 25px
+
+	// end section instagram
+
+
+	// section partners
+
+	
+	.partners 
+		h1
+			font-size: 24px
+			margin-bottom: 24px
+
+	// end section partners
+
+
+	// section us
+
+	.contacts 
+		h1
+			font-size: 24px
+
+	// end section us
+
+
+	// contacts section
+
+	.contacts
+		&__content
+			.container-fluid
+				padding: 0
+		&__description
+			width: 100%
+			margin-left: 0
+			padding: 20px
+			h3
+				font-size: 12px
+				margin-bottom: 15px
+			p
+				font-size: 10px
+				margin-bottom: 30px
+				line-height: 15px
+	// end contacts section
+
+
+	// footer
+	.footer
+		.footer__left 
+			ul
+				li 
+					p
+						font-size: 9px
+						line-height: 16px
+						text-align: left
+			.socials-footer
+				li 
+					margin-right: 20px
+					a 
+						i
+							font-size: 16px
+		.footer__right
+			margin-top: 25px
+			span
+				font-size: 10px
+				line-height: 15px
+			img
+				width: 18%
+
+	// end footer
+
+
+	// popup menu
+
+	.main
+		&__popup-menu
+			width: 100%
+			padding: 0
+			ul
+				text-align: center
+			.social 
+				li
+					margin-right: 20px
+					&:first-child
+						margin-left: 30px
+
+	// end popup menu
+
+@media screen and (max-width: 425px)
+	// footer
+	.footer
+		.footer__left 
+			ul
+				text-align: center
+				li 
+					display: inline-block
+					img
+						width: 15px
+					p
+						text-align: left
+			.socials-footer
+				text-align: center
+				li
+					display: inline-block
+					margin-right: 10px
+
+	// end footer
 
 @media screen and (max-width: 375px)
 	.main 
 		.mobile-button
-			top: 57%
+			top: 75%
 		.mobile-button-down
 			font-size: 9px
 			left: 48%
