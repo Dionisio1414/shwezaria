@@ -352,6 +352,78 @@ b, strong
 	
 // END SECTION
 
+
+// Section banner
+
+.banner
+	margin-bottom: 90px
+	&__content
+		position: relative
+		background-color: #E7EDF2
+		padding: 108px 104px
+		overflow: hidden
+		.border-block
+			position: relative
+			&::after
+				content: ""
+				position: absolute
+				right: 0
+				top: 10px
+				width: 4px
+				height: 91%
+				background-color: $accent
+		img
+			position: absolute
+			top: -80px
+			left: 0
+			transform: rotateX(-180deg)
+		h1
+			font-family: "RalewayBlack", Arial, sans-serif
+			font-size: 48px
+			text-transform: uppercase
+			letter-spacing: 1px
+			margin-left: 40%
+			margin-bottom: 15px
+			color: $accent
+			+ p
+				font-family: "RalewayBlack", sans-serif
+				font-size: 30px
+				text-transform: uppercase
+				margin-left: 40%
+				color: $accent
+		.price
+			font-family: "RalewayBlack", sans-serif
+			font-size: 30px
+			color: $accent
+			margin-bottom: 0
+			margin-left: 5%
+			text-transform: uppercase
+		.count
+			font-family: "RalewayExtraBold", sans-serif
+			font-size: 72px
+			margin-top: -40px
+			margin-bottom: 0
+			margin-left: 5%
+			color: $accent
+		span
+			position: relative
+			font-family: "RalewayExtraBold", sans-serif
+			font-size: 24px
+			margin-left: 5%
+			color: $accent
+			&::before
+				content: ""
+				position: absolute
+				top: 35px
+				width: 80px
+				height: 4px
+				background-color: $accent
+			a
+				color: #006c98
+
+// End section banner
+
+
 // Second section
 
 .about

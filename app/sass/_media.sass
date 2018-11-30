@@ -748,6 +748,49 @@
 				margin-left: 1.823vw
 		//end footer
 
+
+
+	// section banner
+
+	
+	.banner
+		margin-bottom: 4.688vw
+		&__content
+			padding: 5.625vw 5.417vw
+			.border-block
+				&::after
+					content: ""
+					top: 0.521vw
+					width: 0.208vw
+					height: 91%
+			img
+				top: -4.167vw
+			h1
+				font-size: 2.5vw
+				letter-spacing: 0.052vw
+				margin-bottom: 0.781vw
+				margin-left: 17vw
+				+ p
+					font-size: 1.563vw
+					margin-left: 17vw
+			.price
+				font-size: 1.563vw
+				margin-left: 2vw
+			.count
+				font-size: 3.75vw
+				margin-top: -2.083vw
+				margin-left: 2vw
+			span
+				font-size: 1.25vw
+				margin-left: 2vw
+				&::before
+					content: ""
+					top: 1.823vw
+					width: 4.167vw
+					height: 0.208vw
+	
+	// end section banner
+
 +media-breakpoint-down(lg)
 	//header
 	.header__left 
@@ -765,7 +808,29 @@
 
 	// end section colb
 
+
+	// section banner
+
+	.banner
+		&__content 
+			.border-block
+				&::after
+					right: -7px
+
+	// end section banner
+
 +media-breakpoint-down(md)
+	
+	// section banner
+
+	.banner
+		&__content 
+			.border-block
+				&::after
+					right: -14px
+
+	// end section banner
+	
 	//header
 	.header
 		padding-left: 0
@@ -1115,6 +1180,54 @@
 	// end footer
 	
 +media-breakpoint-down(sm)
+	// section banner
+	.price-center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+	.banner
+		&__content
+			.border-block
+				&::after
+					display: none
+			h1
+				font-size: 26px
+				margin-left: 0
+				text-align: center
+				+ p
+					font-size: 21px
+					margin-left: 0
+					text-align: center
+			.price
+				font-size: 16px
+				margin-left: 0
+				text-align: center
+				margin-right: 10px
+			.count
+				font-size: 28px
+				margin-top: -10px
+				margin-left: 0
+				text-align: center
+				display: inline
+			span
+				font-size: 14px
+				margin-left: 0
+				display: block
+				text-align: center
+				&::before
+					top: 22px
+					width: 50px
+					height: 2px
+			.border-block
+				&::after
+					right: -14px
+
+	// end section banner
+	
+	
 	//header
 	.header
 		.logo
@@ -1356,6 +1469,28 @@
 	// end section school
 
 +media-breakpoint-down(xs)
+	
+	.price-center
+		align-items: center
+
+	.banner
+		&__content
+			h1
+				font-size: 18px
+				+ p
+					font-size: 14px
+			.price
+				font-size: 14px
+				margin-right: 10px
+			.count
+				font-size: 20px
+				margin-top: -10px
+				margin-left: 0
+				text-align: center
+				display: inline
+			span
+				font-size: 12px
+	
 	// header
 	.header 
 		.header__left 
